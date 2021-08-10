@@ -38,11 +38,11 @@
     _lineView.backgroundColor = _underlineColorNormal;
     _lineView.layer.cornerRadius = sepLineViewHeight / 2.0;
     [_lineView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.height.mas_equalTo(sepLineViewHeight);
+        make.height.mas_equalTo(2);
         make.left.right.bottom.offset(0);
     }];
     
-    _lineView.layer.shadowColor = [[UIColor blackColor] colorWithAlphaComponent:0.2].CGColor;
+    _lineView.layer.shadowColor = [[UIColor clearColor] colorWithAlphaComponent:0.2].CGColor;
     _lineView.layer.shadowOpacity = 1;
     _lineView.layer.shadowOffset = CGSizeMake(0, 2);
     _lineView.layer.shadowRadius = 4;
